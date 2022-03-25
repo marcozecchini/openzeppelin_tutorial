@@ -19,3 +19,22 @@ This is a project to properly setup, develop and deploy Smart Contracts accordin
 1. https://docs.openzeppelin.com/learn/developing-smart-contracts
 2. https://docs.openzeppelin.com/learn/deploying-and-interacting
 3. https://docs.openzeppelin.com/learn/connecting-to-public-test-networks
+
+## Upgradability
+Follow this guide: https://docs.openzeppelin.com/learn/upgrading-smart-contracts.
+
+**Why Upgrade a Contract?**
+
+By design, smart contracts are immutable. On the other hand, software quality heavily depends on the ability to upgrade and patch source code in order to produce iterative releases. Even though blockchain based software profits significantly from the technology’s immutability, still a certain degree of mutability is needed for bug fixing and potential product improvements. OpenZeppelin Upgrades solves this apparent contradiction by providing an easy to use, simple, robust, and opt-in upgrade mechanism for smart contracts that can be controlled by any type of governance, be it a multi-sig wallet, a simple address or a complex DAO.
+
+**Upgrading via the Proxy Pattern**
+
+The basic idea is using a proxy for upgrades. The first contract is a simple wrapper or "proxy" which users interact with directly and is in charge of forwarding transactions to and from the second contract, which contains the logic. The key concept to understand is that the logic contract can be replaced while the proxy, or the access point is never changed. Both contracts are still immutable in the sense that their code cannot be changed, but the logic contract can simply be swapped by another contract. The wrapper can thus point to a different logic implementation and in doing so, the software is "upgraded".
+
+```
+User ---- tx ---> Proxy ----------> Implementation_v0
+                     |
+                      ------------> Implementation_v1
+                     |
+                      ------------> Implementation_v2
+```

@@ -1,5 +1,7 @@
 require("@nomiclabs/hardhat-waffle");
 require('@nomiclabs/hardhat-ethers');
+require('@openzeppelin/hardhat-upgrades');
+
 const { infuraApiKey, mnemonic } = require('./secrets.json');
 
 // This is a sample Hardhat task. To learn how to create your own go to
