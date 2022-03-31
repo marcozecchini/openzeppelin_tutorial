@@ -21,6 +21,7 @@ To start using this tutorial:
 Starting from branch `token_todo` we are going to implement the following steps:
 
 * https://docs.openzeppelin.com/contracts/4.x/
+* Preliminarly we should understand how to override contract: https://docs.openzeppelin.com/contracts/4.x/extending-contracts
 * [Token overview](https://docs.openzeppelin.com/contracts/4.x/tokens)
     * [ERC-20](https://docs.openzeppelin.com/contracts/4.x/erc20)
     * [ERC-721](https://docs.openzeppelin.com/contracts/4.x/erc721)
