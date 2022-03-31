@@ -1,9 +1,9 @@
 // scripts/deploy.js
 async function main () {
     // We get the contract to deploy
-    const Contract = await ethers.getContractFactory('GLDToken');
+    const Contract = await ethers.getContractFactory('GameItem');
     console.log('Deploying the contract...');
-    const contract = await Contract.deploy(1000);
+    const contract = await Contract.deploy();
     await contract.deployed();
     console.log('Contract deployed to:', contract.address);
   }
