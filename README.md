@@ -17,5 +17,11 @@ To start using this tutorial:
     "infuraApiKey": "..."
 }
 ```
-* 
+# Tutorial on Contracts to manage tokens
+Starting from branch `token_todo` we are going to implement the following steps:
+
+* https://docs.openzeppelin.com/contracts/4.x/
+* [Token overview](https://docs.openzeppelin.com/contracts/4.x/tokens)
+    * [ERC-20](https://docs.openzeppelin.com/contracts/4.x/erc20)
+    * [ERC-721](https://docs.openzeppelin.com/contracts/4.x/erc721)
 
