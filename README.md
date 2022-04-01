@@ -1,3 +1,17 @@
+# Structure of the repo
+
+```
+        token_todo ---> token
+            |
+            |
+main --> boilerplate
+        
+        (good starting
+        point for your future
+        projects)
+
+```
+
 # Example from OpenZeppelin Documentation
 
 This is a project to properly setup, develop and deploy Smart Contracts according to OpenZeppelin documentation. We are going to follow the following tutorials:
