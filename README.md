@@ -5,11 +5,13 @@
             |
             |
 main --> boilerplate
-        
+            |
         (good starting
         point for your future
         projects)
-
+            |
+            |
+        upgradability_todo ---> upgradability
 ```
 
 # Example from OpenZeppelin Documentation
