@@ -22,6 +22,8 @@ To start using this tutorial:
 ## Upgradability
 Follow this guide: https://docs.openzeppelin.com/learn/upgrading-smart-contracts.
 
+General Information about Upgradability are available here: https://docs.openzeppelin.com/upgrades-plugins/1.x/
+
 **Why Upgrade a Contract?**
 
 By design, smart contracts are immutable. On the other hand, software quality heavily depends on the ability to upgrade and patch source code in order to produce iterative releases. Even though blockchain based software profits significantly from the technology’s immutability, still a certain degree of mutability is needed for bug fixing and potential product improvements. OpenZeppelin Upgrades solves this apparent contradiction by providing an easy to use, simple, robust, and opt-in upgrade mechanism for smart contracts that can be controlled by any type of governance, be it a multi-sig wallet, a simple address or a complex DAO.
