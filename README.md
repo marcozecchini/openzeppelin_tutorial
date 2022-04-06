@@ -19,3 +19,9 @@ To start using this tutorial:
 ```
 * 
 
+## Oracle 
+
+1. Install chainlink contracts: `npm install @chainlink/contracts --save`
+2. https://docs.chain.link/docs/request-and-receive-data/ 
+3. https://docs.chain.link/docs/make-a-http-get-request/ 
+

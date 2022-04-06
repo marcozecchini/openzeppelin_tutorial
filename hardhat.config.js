@@ -29,5 +29,9 @@ module.exports = {
                url: `https://rinkeby.infura.io/v3/${infuraApiKey}`,
                accounts: { mnemonic: mnemonic },
       },
+      kovan: {
+        url: `https://kovan.infura.io/v3/${infuraApiKey}`,
+        accounts: { mnemonic: mnemonic },
+    },
   },
 };
