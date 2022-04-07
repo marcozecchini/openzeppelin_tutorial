@@ -17,28 +17,13 @@ To start using this tutorial:
     "infuraApiKey": "..."
 }
 ```
-* 
 
-## Upgradability
-Follow this guide: https://docs.openzeppelin.com/learn/upgrading-smart-contracts.
+## Oracle 
 
-General Information about Upgradability are available here: https://docs.openzeppelin.com/upgrades-plugins/1.x/
-
-**Why Upgrade a Contract?**
-
-By design, smart contracts are immutable. On the other hand, software quality heavily depends on the ability to upgrade and patch source code in order to produce iterative releases. Even though blockchain based software profits significantly from the technology’s immutability, still a certain degree of mutability is needed for bug fixing and potential product improvements. OpenZeppelin Upgrades solves this apparent contradiction by providing an easy to use, simple, robust, and opt-in upgrade mechanism for smart contracts that can be controlled by any type of governance, be it a multi-sig wallet, a simple address or a complex DAO.
-
-**Upgrading via the Proxy Pattern**
-
-The basic idea is using a proxy for upgrades. The first contract is a simple wrapper or "proxy" which users interact with directly and is in charge of forwarding transactions to and from the second contract, which contains the logic. The key concept to understand is that the logic contract can be replaced while the proxy, or the access point is never changed. Both contracts are still immutable in the sense that their code cannot be changed, but the logic contract can simply be swapped by another contract. The wrapper can thus point to a different logic implementation and in doing so, the software is "upgraded".
-
-```
-User ---- tx ---> Proxy ----------> Implementation_v0
-                     |
-                      ------------> Implementation_v1
-                     |
-                      ------------> Implementation_v2
-```
-
-**Upgrade token contract**
-Follw this tutorial: https://docs.openzeppelin.com/contracts/4.x/upgradeable
+1. Install chainlink contracts: `npm install @chainlink/contracts --save`
+2. https://docs.chain.link/docs/request-and-receive-data/ 
+3. https://docs.chain.link/docs/make-a-http-get-request/ 
+4. Run `scripts/deploy.js` to deploy `APIConsumer.sol`  contract
+5. Before invoking the `requestVolumeData` function in the `scripts/index.js` script, fund your contract with LINK and your account with Ether from https://faucets.chain.link/ 
+    
+    a. The faucet works only with Metamask. Send the LINK token from Metamask to your contract.
