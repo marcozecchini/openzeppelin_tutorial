@@ -12,6 +12,9 @@ main --> boilerplate
             |
             |
         upgradability_todo ---> upgradability
+            |
+            |
+        oracle_todo -----> oracle
 ```
 
 # Example from OpenZeppelin Documentation
